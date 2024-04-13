@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+#main {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #FFFFFF;
+}
+
+#upper ul li {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+#upper ul li:hover {
+    border-bottom: 1px solid blue;
+}
+
+.hello .card {
+    cursor: pointer;
+}
+
+.slider-2 .card {
+    cursor: pointer;
+}
+
+.slider-4 .card {
+    cursor: pointer;
+}
+
+.slider-4 .card .txt p {
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+#desc p{
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: x-small;
+}
+#negative {
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+#show .card {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+#show .card-wrapper {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-5 .card{
+    cursor: pointer;
+}
+.slider-6 .card{
+    cursor: pointer;
+}
+.slick-arrow{
+    display: none;
+}
+#shadow{
+    text-shadow: 1px 1px 1px black,2px 2px black;
+    
+}
+#hr{
+    border: 1px dotted black;
+}
+#caution{
+    font-size: 10pt;
+}
+#society{
+    visibility: hidden;
+}
+#societyReview{
+    height: 500px;
+}
+#advertise1{
+    background-color: #EBECF0;
+}
+#Explore{
+    visibility: hidden;
+}
+#span1{
+    font-size: 9pt;
+    padding: 5px;
+}
+#card:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+#feedback span{
+    cursor: pointer;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: red; /* Change color here */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#bank::before{
+    content: "";
+    display: block;
+    background-color: #FFF5E4;
+}
+
+#delivered{
+    background-color: #F0F9FF;
+    border: 1px inset #AADDFF;
+    border-radius: 15px;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+#delivered:hover{
+    background-color: #cfdce4;
+}
+#articleSlider .card{
+    cursor: pointer;
+}
+#quicklinks span:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+#related ul li{
+    list-style: none;
+    cursor: pointer;
+}
+#contact{
+    margin-top: 70px;
+}
+#contact ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 5px;
+}
+#connect span{
+    cursor: pointer;
+}
+
+@media screen and (max-width:748px) {
+    #main {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #upper {
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        line-height: 1;
+        background-color: white;
+    }
+
+    #upper ul li {
+        margin: 10px;
+    }
+  
+    #review {
+        height: 100%;
+    }
+    #hide {
+        display: none;
+    }
+    
+}
+/* Container for the feedback section */
+.feedback-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 10px; /* Adjust padding as needed */
+}
+
+/* Container for the mention items */
+.mention-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Individual mention item */
+.mention-item {
+    background-color: #F4F5F7;
+    padding: 5px 10px; 
+    margin: 5px;
+    word-break: break-word;
+    flex: 1 1 auto; 
+    max-width: calc(50% - 10px); 
+}
+
+@media (min-width: 768px) {
+    .mention-item {
+        max-width: calc(33.333% - 10px); /* Three items per row on medium screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .mention-item {
+        max-width: calc(25% - 10px); /* Four items per row on large screens */
+    }
+}
+
